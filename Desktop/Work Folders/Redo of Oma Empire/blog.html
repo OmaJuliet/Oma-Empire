@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog site for Oma Empire</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="blog-style.css">
+</head>
+<body>
+<main>
+    <div class="container">
+        <div class="row"> 
+            <div class="heading">
+                <h1><span>Oma</span> Blog</h1>
+                <p>This is the beginning of Oma Fashion Empire blog. Blanditiis 
+                    minima dignissimos id, nobis inventore aut voluptatem eligendi facere, 
+                    ea provident dolor ab alias harum! Rerum quibusdam veniam, fugit eaque 
+                 </p>
+            </div>
+
+            <div class="content">
+                <div class="content-card">
+                    <img class="content-img" src="images/image 2.jpg">
+                    <h4>Your style and people's perspective.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus 
+                        quas nihil illo voluptatem esse modi accusamus animinobis quisquam molestiae?
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, Lorem ipsum, dolor sit amet consectetur 
+                        adipisicing elit. Error, totam? eligendi! </p> 
+                    <button  class="content-btn">Read more!</button>
+                </div>
+
+                <div class="content-card">
+                    <img class="content-img" src="images/image 2.jpg">
+                    <h4>Fashions fade, style is eternal.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus 
+                        quas nihil illo voluptatem esse modi accusamus animian>nobis quisquam molestiae?
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, sunt?eligendi!</p>
+                    <button  class="content-btn">Read more!</button>
+                </div>
+
+                <div class="content-card">
+                    <img class="content-img" src="images/image 2.jpg">
+                    <h4>The joy of dressing is an art</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus 
+                        quas nihil illo voluptatem esse modi accusamus animiLorem ipsum dolor sit amet.
+                        nobis quisquam molestiae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, provident.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, 
+                        eligendi!</p>
+                    <button class="content-btn">Read more!</button>
+                </div>
+            </div>
+        </div> 
+    </div> 
+</main>
+
+<!--footer section-->
+<footer class="footer">
+    
+    <div class="cpyright"> &copy; Copyright | 2022 | All rights reserved <br>
+        <div class="name"><small>Crafted with <i class="fa fa-fw fa-heart"></i> by Juliet</small></div>
+     </div>
+ 
+</footer>
+
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script> 
+ 
+var password = "Ja34ghu";
+var response;
+var entryCount = 0; 
+var entryLimit = 2;
+var error = false;
+while( response != password && !error ) { 
+    if(entryCount < entryLimit ) { 
+        response = window.prompt("Enter the word 'Ja34ghu' to verify you are not a robot") 
+        entryCount++;
+    }  else { 
+        error = true;
+    }
+} 
+if( error ) {
+    alert("Too many entries. Refesh page and try again");
+} else {
+    alert("Successful!");
+} 
+
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+
+
+
+</script>
+
+</body>
+</html>
