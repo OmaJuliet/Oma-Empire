@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sign Up/Sign in</title>
+</head>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+ }
+ .container {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/image 2.jpg');
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+ }
+
+ .form-box {
+    width: 300px;
+    height: 500px;
+    background: white;
+    position: relative;
+    margin: 6% auto;
+    padding: 5px;
+ }
+
+ .box-button {
+     width: 210px;
+     position: relative;
+     margin: 45px auto;
+     outline: none;
+     border-radius: 25px;
+ }
+
+ .toggle-button {
+    position: relative;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+ }
+
+.btn {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 210px;
+    height: 50px;
+    font-size: 14px;
+    background-color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+}
+ 
+
+.input-box {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.9s;
+}
+
+.input-column {
+    background: transparent;
+    width: 90%;
+    padding: 10px 10px;
+    margin: 10px 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(118, 114, 114);
+    outline: none;
+}
+
+.check-box {
+    margin: 20px 10px 30px 7px;
+}
+
+span {
+    position: absolute;
+    font-size: 14px;
+    color: rgb(118, 114, 114);
+    bottom: 155px;
+}
+
+@media only screen and (max-width:600px) {
+    span {
+        bottom: 155px;
+    }
+}
+
+
+.submitbtn, .signup-btn {
+    width: 70%;
+    background-color: cornflowerblue;
+    margin: 0 50px;
+    justify-content: center;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+.submitbtn:hover, .signup-btn:hover {
+    color: white;
+    background-color: rgb(33, 96, 214);
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="box-button">
+                <button type="button" class="btn"><b>Oma Empire Log in Form</b></button>
+            </div>
+
+
+            <form id="login" class="input-box">
+                <input type="text" class="input-column" placeholder="Enter User name" required>
+                <input type="password" class="input-column" placeholder="Enter password" required><br>
+                <input type="checkbox" class="check-box"><span> Forgot Password?</span><br>
+                <button type="submit" class="submitbtn">Log in</button><br>
+                <p>Don't have an account yet? Sign up </p><br>
+                <button type="submit" class="signup-btn">Sign Up</button>
+            </form>
+
+            
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+

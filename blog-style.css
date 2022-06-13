@@ -1,0 +1,193 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content-img {
+    width: 500px;
+    height: 300px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.container .row {
+    width: 85%;
+    margin: auto;
+}
+
+.container .row .heading {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.container .row .heading h1 {
+    padding-top: 30px;
+    font-size: 42px;
+}
+
+.container .row .heading span {
+    color: cornflowerblue;
+}
+
+.container .row .heading p {
+    color: #3d3d3d;
+    margin-top: 15px;
+    font-size: 17px;
+    line-height: 1.5;
+} 
+
+.content {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .content-card {
+    margin: 45px 20px;
+    flex: 1;
+
+}
+
+.content .content-card img {
+    width: 100%;
+    height: auto;
+}
+
+.content .content-card h4 {
+    margin-top: 18px; 
+}
+
+.content .content-card p {
+    font-size: 15px;
+    margin-top: 8px; 
+    line-height: 1.5;
+    color: #3d3d3d;
+} 
+
+.content-btn {
+    font-size: 15px;
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: cornflowerblue;
+    border: 7px;
+    border-radius: 20px;
+}
+
+.content-btn:hover {
+    background-color: rgb(41, 100, 210);
+    color: white;
+    transition: 0.9s ease-in-out;
+}
+
+
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    } 
+
+    .container .row .heading h1 {
+        font-size: 32px;
+    }
+}
+
+
+/*footer section*/
+footer {
+    text-align: center;
+}
+.footer .cpyright {
+    text-align: center;
+    justify-content: center;
+    margin-top: 3rem; 
+    padding-top: 2.5rem;
+    font-size: 20px;
+    color: rgb(33, 32, 32);
+ }  
+  
+ .name {
+    color: cornflowerblue;
+    margin-top: 10px;
+    margin-bottom: 25px;
+ }
+ 
+
+/* pop up chat button */
+.open-button {
+    background-color: rgb(94, 90, 90);
+    color: white;
+    width: 280px;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px; 
+    right: 28px;
+  } 
+  
+ 
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid white;
+    z-index: 9;
+  }
+  
+
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+  }
+  
+  
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+ 
+  .form-container .btn {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+
+  .form-container .cancel {
+    background-color: crimson;
+  }
+  
+
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  
